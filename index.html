@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+    <title>Punnik</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+<nav class="orange lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Punnik</a>
+        <ul class="right hide-on-med-and-down navbar-fixed">
+            <li><a href="#">Home</a></li>
+            <li><a href="#over_ons">Over Ons</a></li>
+            <li><a href="#faq">Mogelijkheden</a></li>
+            <li><a href="#bestellen">Bestellen</a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#over_ons">Over Ons</a></li>
+            <li><a href="#faq">Mogelijkheden</a></li>
+            <li><a href="#bestellen">Bestellen</a></li>
+        </ul>
+        <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+</nav>
+<img src="images/Ann1.jpg" alt="header" width="100%">
+
+<div class="container">
+
+    <!--   Icon Section   -->
+    <div class="row">
+        <div class="col s12">
+            <div class="icon-block row">
+                <h2 class="center orange-text" id="over_ons"><i class="material-icons">info</i></h2>
+                <h5 class="center">Over Ons</h5>
+
+                <p class="light">Wij zijn een groep van vijf studenten, die de mogelijkheid kregen om een tijdelijke
+                    onderneming te
+                    starten. We
+                    zagen dit meteen als een leuke opportuniteit en zo ontstond <b>Punnik</b>.
+                    Waarom nu juist deze onderneming? Wij vinden het zelf vaak moeilijk om een leuk origineel cadeau
+                    te
+                    vinden, en wat is nu origineler dan een gepersonaliseerd cadeau dat ook nog eens als
+                    huisdecoratie kan
+                    dienen. </p>
+            </div>
+        </div>
+
+        <div class="col s12 m6" id="faq">
+            <div class="icon-block">
+                <h2 class="center orange-text"><i class="material-icons">credit_card</i></h2>
+                <h5 class="center">Overschrijving</h5>
+
+                <p class="light">Klinkt dit als een cadeau voor iemand die je kent, dan kan u het <b><a
+                        class="orange-text" href="#bestellen">bestelformulier</a></b>
+                    invullen waarna je een mail ontvangt met daarin een rekeningnummer en een gestructureerde mededeling
+                    die aan de overdracht moet worden toegevoegd. Het moment waarop wij de betaling ontvangen beginnen
+                    wij aan de bestelling en word deze zo snel mogelijk afgewerkt.
+                </p>
+
+            </div>
+        </div>
+
+        <div class="col s12 m6">
+            <div class="icon-block">
+                <h2 class="center orange-text"><i class="material-icons">apps</i></h2>
+                <h5 class="center">Varianten &amp; Kleuren</h5>
+
+                <p class="light">Een leuk gepersonaliseerd cadeau? Daar moeten er toch meer van zijn! Daarom komen wij
+                    met drie varianten te kiezen in drie verschillende kleuren (roos, blauw, oranje). Zo kan je kiezen
+                    om je <b
+                            class="orange-text">Punnik</b> aan een nagel te hangen via een touwtje of met een houten
+                    plaatje waar de naam op bevestigd word. Kies je graag voor decoratie op de kast? Dat kan
+                    natuurlijk ook, wij bevestigen de naam op een mooi plankje en voila</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s12">
+            <div class="icon-block">
+                <h6 class="center">Hanger (&euro;3&#47;letter)</h6>
+                <img src="images/Lenn1.jpg" alt="Hanger">
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="icon-block">
+                <h6 class="center">Hout Staand (&euro;3&#47;letter + &euro;3)</h6>
+                <img src="images/Ann1.jpg" alt="Hout Staand">
+            </div>
+        </div>
+        <div class="col s12 m6">
+            <div class="icon-block">
+                <h6 class="center">Hout Liggend (&euro;3&#47;letter + &euro;3)</h6>
+                <img src="images/Ann2.jpg" alt="Hout Liggend">
+            </div>
+        </div>
+    </div>
+
+    <div class="col s12 m4">
+        <div class="icon-block" id="bestellen">
+            <h2 class="center orange-text"><i class="material-icons">card_giftcard</i></h2>
+            <h5 class="center">Bestellen</h5>
+
+            <form class="col s12 m6" action="https://punnik.sinners.be/form.php" method="post">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea required id="word" name="word" class="materialize-textarea"></textarea>
+                        <label for="word">Woord &euro;3&#47;letter</label>
+                    </div>
+
+                    <div class="input-field col s12 m6">
+                        <select class="icons" name="variant">
+                            <option value="Hanger" data-icon="images/carousel1.jpg">Hanger</option>
+                            <option value="Hout Staand" data-icon="images/carousel2.jpg">Hout Staand +&euro;3</option>
+                            <option value="Hout Liggend" data-icon="images/carousel3.jpg">Hout Liggend +&euro;3</option>
+                        </select>
+                        <label>Variant</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <select class="icons" name="kleur">
+                            <option value="roos" data-icon="images/Roos.jpg">Roos</option>
+                            <option value="blauw" data-icon="images/Blauw.jpg">Blauw</option>
+                            <option value="oranje" data-icon="images/Oranje.jpg">Oranje</option>
+                        </select>
+                        <label>Kleur</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input required id="first_name" name="first_name" type="text" class="validate">
+                        <label for="first_name">Voornaam*</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input required id="last_name" name="last_name" type="text" class="validate">
+                        <label for="last_name">Naam*</label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="input-field col s12 m7">
+                        <input required id="street_name" name="street_name" type="text" class="validate">
+                        <label for="street_name">Straatnaam*</label>
+                    </div>
+                    <div class="input-field col s6 m3">
+                        <input required id="street_number" name="street_number" type="number" class="validate">
+                        <label for="street_number">Huisnummer*</label>
+                    </div>
+                    <div class="input-field col s6 m2">
+                        <input id="add_number" name="add_number" type="text" class="validate">
+                        <label for="add_number">Toevoeging</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s4">
+                        <input required id="postal_code" type="number" name="postal_code" class="validate">
+                        <label for="postal_code">Postcode*</label>
+                    </div>
+                    <div class="input-field col s8">
+                        <input required id="city" type="text" name="city" class="validate">
+                        <label for="city">Plaats*</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12 m8">
+                        <input required id="email" type="email" name="email" class="validate">
+                        <label for="email">Email*</label>
+                    </div>
+                    <div class="input-field col s12 m4">
+                        <input type="tel" id="phone" name="number" class="materialize-textarea">
+                        <label for="phone">GSM</label>
+                    </div>
+                </div>
+
+                <div class="center">
+                    <button type="submit" name="submit_button"
+                            class="waves-effect waves-orange orange lighten-1 waves-light btn">Bestel <i
+                            class="material-icons">send</i>
+                    </button>
+                </div>
+                <br>
+            </form>
+        </div>
+    </div>
+
+</div>
+<footer class="page-footer orange lighten-1">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Punnik</h5>
+                <p class="grey-text text-lighten-4">Wij zijn een groep van vijf studenten, die de mogelijkheid
+                    kregen om
+                    een tijdelijke onderneming te starten. We zagen dit meteen als een leuke opportuniteit en zo
+                    ontstond Punnik.</p>
+
+
+            </div>
+            <div class="col l3 m6 s12">
+                <h5 class="white-text">Nog vragen?</h5>
+                <p>Heeft u toch nog vragen over iets? Neem dan gerust contact op via mail en wij proberen zo snel
+                    mogelijk te antwoorden.</p>
+                <b><a class="white-text" href="mailto:bestellingen.punnik@gmail.com">mail@Punnik-Team</a></b>
+            </div>
+            <div class="col l3 m6 s12">
+                <h5 class="white-text">Pagina inhoud</h5>
+                <ul>
+                    <li><a class="white-text" href="#">Home</a></li>
+                    <li><a class="white-text" href="#over_ons">Over Ons</a></li>
+                    <li><a class="white-text" href="#faq">Mogelijkheden</a></li>
+                    <li><a class="white-text" href="#bestellen">Bestellen</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <div class="container">
+            Copyright &copy; <a class="orange-text text-lighten-3" target="_blank" href="https://punnik.sinners.be">punnik.sinners.be</a>
+        </div>
+    </div>
+</footer>
+
+
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="js/materialize.js"></script>
+<script src="js/init.js"></script>
+
+</body>
+</html>
